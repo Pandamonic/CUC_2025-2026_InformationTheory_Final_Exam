@@ -191,9 +191,11 @@ $H(Y)$ 表示为：
 
 则 $H(Y|X)$ 表示为：
 
-\begin{enumerate}[label=\Alph*. , leftmargin=2em, itemsep=1em]
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{p{0.45\textwidth} p{0.45\textwidth}}
 
-\item
+A.\ 
 \begin{tikzpicture}[baseline=-0.5ex, scale=0.55]
     \fill[red] (0,0) circle (1.25cm);
     \fill[white] (1.5,0) circle (1.25cm);
@@ -201,8 +203,8 @@ $H(Y)$ 表示为：
     \draw[thick] (1.5,0) circle (1.25cm);
     \vennbox
 \end{tikzpicture}
-
-\item
+&
+B.\ 
 \begin{tikzpicture}[baseline=-0.5ex, scale=0.55]
     \begin{scope}
         \clip (0,0) circle (1.25cm);
@@ -216,8 +218,11 @@ $H(Y)$ 表示为：
     \draw[thick] (1.5,0) circle (1.25cm);
     \vennbox
 \end{tikzpicture}
+\\
 
-\item
+\vspace{1em}
+
+C.\ 
 \begin{tikzpicture}[baseline=-0.5ex, scale=0.55]
     \fill[red] (1.5,0) circle (1.25cm);
     \fill[white] (0,0) circle (1.25cm);
@@ -225,8 +230,11 @@ $H(Y)$ 表示为：
     \draw[thick] (1.5,0) circle (1.25cm);
     \vennbox
 \end{tikzpicture}
+&
 
-\item
+\vspace{1em}
+
+D.\ 
 \begin{tikzpicture}[baseline=-0.5ex, scale=0.55]
     \begin{scope}
         \clip (0,0) circle (1.25cm);
@@ -237,7 +245,8 @@ $H(Y)$ 表示为：
     \vennbox
 \end{tikzpicture}
 
-\end{enumerate}
+\end{tabular}
+\end{center}
 
 
 \item 离散信道相关的所有概率（边缘概率、条件概率和联合概率）都可由下面选项中的哪两种概率表示？
